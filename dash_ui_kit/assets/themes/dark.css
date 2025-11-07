@@ -1,0 +1,20 @@
+/**
+ * Dark Theme
+ * Dark color scheme
+ */
+
+[data-theme="dark"],
+.dark {
+  --color-primary: 220 80% 60%;
+  --color-secondary: 217 33% 17%;
+  --color-accent: 270 60% 65%;
+  --color-background: 222 47% 11%;
+  --color-foreground: 210 40% 98%;
+  --color-muted: 217 33% 17%;
+  --color-muted-foreground: 215 20% 65%;
+  --color-border: 217 33% 17%;
+  --color-input: 217 33% 17%;
+  --color-ring: 220 80% 60%;
+  --color-destructive: 0 84% 65%;
+  --color-destructive-foreground: 0 0% 98%;
+}

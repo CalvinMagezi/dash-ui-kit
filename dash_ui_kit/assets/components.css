@@ -1,0 +1,260 @@
+/**
+ * Component Styles
+ * Styles for pre-built components
+ */
+
+/* Button Component */
+.duk-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: var(--radius-md);
+  font-weight: var(--font-weight-medium);
+  transition-property: color, background-color, border-color, opacity, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--duration-fast);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.duk-button:focus-visible {
+  outline: 2px solid hsl(var(--color-ring));
+  outline-offset: 2px;
+}
+
+.duk-button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+/* Button Variants */
+.duk-button--default {
+  background-color: hsl(var(--color-primary));
+  color: white;
+}
+
+.duk-button--default:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.duk-button--outline {
+  background-color: transparent;
+  border: 2px solid hsl(var(--color-primary));
+  color: hsl(var(--color-primary));
+}
+
+.duk-button--outline:hover:not(:disabled) {
+  background-color: hsl(var(--color-primary));
+  color: white;
+}
+
+.duk-button--ghost {
+  background-color: transparent;
+  color: hsl(var(--color-primary));
+}
+
+.duk-button--ghost:hover:not(:disabled) {
+  background-color: hsl(var(--color-primary) / 0.1);
+}
+
+.duk-button--destructive {
+  background-color: hsl(var(--color-destructive));
+  color: hsl(var(--color-destructive-foreground));
+}
+
+.duk-button--destructive:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+/* Button Sizes */
+.duk-button--sm {
+  height: 2rem;
+  padding: 0 0.75rem;
+  font-size: var(--font-size-sm);
+}
+
+.duk-button--md {
+  height: 2.5rem;
+  padding: 0 1rem;
+  font-size: var(--font-size-base);
+}
+
+.duk-button--lg {
+  height: 3rem;
+  padding: 0 1.5rem;
+  font-size: var(--font-size-lg);
+}
+
+/* Card Component */
+.duk-card {
+  border-radius: var(--radius-lg);
+  border: 1px solid hsl(var(--color-border));
+  background-color: hsl(var(--color-background));
+  color: hsl(var(--color-foreground));
+}
+
+.duk-card--outlined {
+  border: 2px solid hsl(var(--color-border));
+}
+
+.duk-card--elevated {
+  box-shadow: var(--shadow-md);
+  border: none;
+}
+
+.duk-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+  padding: var(--spacing-6);
+}
+
+.duk-card-title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+}
+
+.duk-card-description {
+  font-size: var(--font-size-sm);
+  color: hsl(var(--color-muted-foreground));
+}
+
+.duk-card-content {
+  padding: var(--spacing-6);
+  padding-top: 0;
+}
+
+.duk-card-footer {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-6);
+  padding-top: 0;
+}
+
+/* Input Component */
+.duk-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.duk-label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: hsl(var(--color-foreground));
+}
+
+.duk-input {
+  display: flex;
+  height: 2.5rem;
+  width: 100%;
+  border-radius: var(--radius-md);
+  border: 1px solid hsl(var(--color-input));
+  background-color: hsl(var(--color-background));
+  padding: 0 0.75rem;
+  font-size: var(--font-size-sm);
+  color: hsl(var(--color-foreground));
+  transition: border-color var(--duration-fast);
+}
+
+.duk-input::placeholder {
+  color: hsl(var(--color-muted-foreground));
+}
+
+.duk-input:focus {
+  outline: none;
+  border-color: hsl(var(--color-ring));
+  box-shadow: 0 0 0 2px hsl(var(--color-ring) / 0.2);
+}
+
+.duk-input:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.duk-input--error {
+  border-color: hsl(var(--color-destructive));
+}
+
+.duk-input--error:focus {
+  border-color: hsl(var(--color-destructive));
+  box-shadow: 0 0 0 2px hsl(var(--color-destructive) / 0.2);
+}
+
+.duk-input-error {
+  font-size: var(--font-size-sm);
+  color: hsl(var(--color-destructive));
+}
+
+/* Badge Component */
+.duk-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  transition: background-color var(--duration-fast);
+  border: 1px solid transparent;
+}
+
+.duk-badge--default {
+  background-color: hsl(var(--color-primary));
+  color: white;
+}
+
+.duk-badge--secondary {
+  background-color: hsl(var(--color-secondary));
+  color: hsl(var(--color-foreground));
+}
+
+.duk-badge--outline {
+  background-color: transparent;
+  border-color: hsl(var(--color-border));
+  color: hsl(var(--color-foreground));
+}
+
+.duk-badge--destructive {
+  background-color: hsl(var(--color-destructive));
+  color: hsl(var(--color-destructive-foreground));
+}
+
+.duk-badge--sm {
+  padding: 0.125rem 0.5rem;
+  font-size: 0.625rem;
+}
+
+.duk-badge--md {
+  padding: 0.25rem 0.625rem;
+  font-size: var(--font-size-xs);
+}
+
+.duk-badge--lg {
+  padding: 0.375rem 0.75rem;
+  font-size: var(--font-size-sm);
+}
+
+/* Select Component */
+.duk-select {
+  width: 100%;
+}
+
+.duk-select .Select-control {
+  height: 2.5rem;
+  border-radius: var(--radius-md);
+  border: 1px solid hsl(var(--color-input));
+  background-color: hsl(var(--color-background));
+  transition: border-color var(--duration-fast);
+}
+
+.duk-select .Select-control:hover {
+  border-color: hsl(var(--color-ring));
+}
+
+.duk-select.is-focused .Select-control {
+  border-color: hsl(var(--color-ring));
+  box-shadow: 0 0 0 2px hsl(var(--color-ring) / 0.2);
+}

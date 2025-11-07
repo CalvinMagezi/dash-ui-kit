@@ -1,0 +1,20 @@
+/**
+ * Light Theme
+ * Default light color scheme
+ */
+
+:root,
+[data-theme="light"] {
+  --color-primary: 220 80% 50%;
+  --color-secondary: 210 40% 96%;
+  --color-accent: 270 60% 55%;
+  --color-background: 0 0% 100%;
+  --color-foreground: 222 47% 11%;
+  --color-muted: 210 40% 96%;
+  --color-muted-foreground: 215 16% 47%;
+  --color-border: 214 32% 91%;
+  --color-input: 214 32% 91%;
+  --color-ring: 220 80% 50%;
+  --color-destructive: 0 84% 60%;
+  --color-destructive-foreground: 0 0% 98%;
+}

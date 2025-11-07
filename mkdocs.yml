@@ -1,0 +1,94 @@
+site_name: Dash UI Kit
+site_description: A lightweight styling library for Plotly Dash applications
+site_author: Calvin Magezi
+site_url: https://dash-ui-kit.readthedocs.io/
+
+repo_name: CalvinMagezi/dash-ui-kit
+repo_url: https://github.com/CalvinMagezi/dash-ui-kit
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [dash_ui_kit]
+          options:
+            show_source: true
+            show_root_heading: true
+            show_root_full_path: false
+            docstring_style: google
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: getting-started/installation.md
+      - Quick Start: getting-started/quick-start.md
+      - Migration: getting-started/migration.md
+  - Components:
+      - Overview: components/overview.md
+      - Button: components/button.md
+      - Card: components/card.md
+      - Input: components/input.md
+      - Badge: components/badge.md
+      - Select: components/select.md
+  - Utilities:
+      - Overview: utilities/overview.md
+      - Spacing: utilities/spacing.md
+      - Layout: utilities/layout.md
+      - Typography: utilities/typography.md
+      - Colors: utilities/colors.md
+      - Borders: utilities/borders.md
+      - Effects: utilities/effects.md
+  - Theming:
+      - Customization: theming/customization.md
+      - CSS Variables: theming/css-variables.md
+      - Dark Mode: theming/dark-mode.md
+  - Examples:
+      - Dashboard: examples/dashboard.md
+      - Forms: examples/forms.md
+      - Data Tables: examples/data-tables.md
+  - API Reference: api-reference.md
+  - Contributing: CONTRIBUTING.md
+  - Changelog: CHANGELOG.md

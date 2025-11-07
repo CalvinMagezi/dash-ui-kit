@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+include CHANGELOG.md
+recursive-include dash_ui_kit/assets *.css
+recursive-include dash_ui_kit/assets *.js
+recursive-include dash_ui_kit/assets *.map
