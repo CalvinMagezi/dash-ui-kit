@@ -138,3 +138,8 @@ Thumbs.db
 node_modules/
 package-lock.json
 .github/workflows/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
