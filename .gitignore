@@ -137,7 +137,6 @@ Thumbs.db
 *.css.map
 node_modules/
 package-lock.json
-.github/workflows/
 
 # Distribution / packaging
 dist/
