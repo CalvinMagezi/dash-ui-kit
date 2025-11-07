@@ -1,0 +1,20 @@
+/* State Utilities */
+
+/* Hover states */
+.hover\:opacity-80:hover { opacity: 0.8; }
+.hover\:opacity-90:hover { opacity: 0.9; }
+.hover\:bg-primary:hover { background-color: hsl(var(--color-primary)); }
+.hover\:bg-secondary:hover { background-color: hsl(var(--color-secondary)); }
+.hover\:bg-accent:hover { background-color: hsl(var(--color-accent)); }
+.hover\:bg-muted:hover { background-color: hsl(var(--color-muted)); }
+
+/* Focus states */
+.focus\:ring:focus { outline: 2px solid hsl(var(--color-ring)); outline-offset: 2px; }
+.focus\:ring-2:focus { box-shadow: 0 0 0 2px hsl(var(--color-ring)); }
+
+/* Active states */
+.active\:scale-95:active { transform: scale(0.95); }
+
+/* Disabled states */
+.disabled\:opacity-50:disabled { opacity: 0.5; }
+.disabled\:pointer-events-none:disabled { pointer-events: none; }
